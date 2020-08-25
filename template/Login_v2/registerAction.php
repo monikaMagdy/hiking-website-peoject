@@ -19,6 +19,7 @@ if(isset($_POST["register"]))
      empty($_POST['address'])||
      empty($_POST['age'])||
      empty($_POST['phoneNumber'])||
+     empty($_POST['image'])||
      empty($_POST['role'])
      )
      {
@@ -37,6 +38,7 @@ if(isset($_POST["register"]))
         address,
         age,
         phoneNumber,
+        image,
         role
         ) 
         VALUES
@@ -50,6 +52,7 @@ if(isset($_POST["register"]))
             '".$_POST['address']."',
             '".$_POST['age']."',
             '".$_POST['phoneNumber']."',
+            '".$_POST['image']."',
             '".$_POST['role']."'
         )";
     echo $sql;

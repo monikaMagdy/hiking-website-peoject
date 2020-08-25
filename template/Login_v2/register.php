@@ -84,6 +84,11 @@
 						<input class="input100" type="text" name="phoneNumber" id="phoneNumber">
 						<span class="focus-input100" data-placeholder="Phone Number"></span>
 					</div>
+
+					<div class="wrap-input100 validate-input" >
+						<input class="input100" type="file" name="image" id="img">
+						<span class="focus-input100"></span>
+					</div>
 										
 					<div class=" validate-input" >
 						<select name="role">
