@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 24, 2020 at 10:42 AM
--- Server version: 10.3.15-MariaDB
--- PHP Version: 7.1.30
+-- Host: 127.0.0.1
+-- Generation Time: Aug 25, 2020 at 11:56 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -117,6 +117,7 @@ CREATE TABLE `user` (
   `address` varchar(255) NOT NULL,
   `age` int(255) NOT NULL,
   `phoneNumber` int(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -124,9 +125,9 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`userID`, `userName`, `email`, `password`, `firstName`, `midName`, `lastName`, `address`, `age`, `phoneNumber`, `role`) VALUES
-(1, 'dondon', 'dondon@gmail.com', '123', 'Madonna', 'Said', 'Mehanny\r\n', '4 sadr eldin', 12, 1221570115, 'hiker'),
-(2, 'Monica2', 'Monica.miu.com', '123', 'Monica', 'Magdy', 'Andraws', 'korba', 23, 1226022109, 'hiker');
+INSERT INTO `user` (`userID`, `userName`, `email`, `password`, `firstName`, `midName`, `lastName`, `address`, `age`, `phoneNumber`, `image`, `role`) VALUES
+(1, 'dondon', 'dondon@gmail.com', '123', 'Madonna', 'Said', 'Mehanny\r\n', '4 sadr eldin', 12, 1221570115, '', 'hiker'),
+(2, 'Monica2', 'Monica.miu.com', '123', 'Monica', 'Magdy', 'Andraws', 'korba', 23, 1226022109, '', 'hiker');
 
 --
 -- Indexes for dumped tables
